@@ -28,18 +28,16 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BEADEFD
-P 9150 6700
-F 0 "#PWR?" H 9150 6450 50  0001 C CNN
-F 1 "GND" H 9155 6527 50  0000 C CNN
-F 2 "" H 9150 6700 50  0001 C CNN
-F 3 "" H 9150 6700 50  0001 C CNN
-	1    9150 6700
+P 9150 7100
+F 0 "#PWR?" H 9150 6850 50  0001 C CNN
+F 1 "GND" H 9155 6927 50  0000 C CNN
+F 2 "" H 9150 7100 50  0001 C CNN
+F 3 "" H 9150 7100 50  0001 C CNN
+	1    9150 7100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9150 5300 9000 5300
-Wire Wire Line
-	9150 6600 9150 6700
 Wire Wire Line
 	11000 5350 11600 5350
 Wire Wire Line
@@ -48,373 +46,6 @@ Text Label 11600 5450 0    50   ~ 0
 rxd0
 Wire Wire Line
 	11000 6550 11600 6550
-Wire Wire Line
-	10250 6950 10250 7300
-Wire Wire Line
-	10350 6950 10350 7300
-Wire Wire Line
-	9850 6950 9850 7300
-Wire Wire Line
-	9950 6950 9950 7300
-Text Label 9850 7300 3    50   ~ 0
-SDA_CHA
-Text Label 9950 7300 3    50   ~ 0
-SCL_CHA
-$Comp
-L SparkFun-DigitalIC:SX1509 U?
-U 1 1 5BEAFEEC
-P 14700 4000
-F 0 "U?" H 14700 5165 50  0000 C CNN
-F 1 "SX1509" H 14700 5074 50  0000 C CNN
-F 2 "QFN-28" H 14730 4150 20  0001 C CNN
-F 3 "" H 14700 4000 60  0001 C CNN
-	1    14700 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BEB0843
-P 14100 5100
-F 0 "#PWR?" H 14100 4850 50  0001 C CNN
-F 1 "GND" H 14105 4927 50  0000 C CNN
-F 2 "" H 14100 5100 50  0001 C CNN
-F 3 "" H 14100 5100 50  0001 C CNN
-	1    14100 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15200 3100 15300 3100
-Wire Wire Line
-	14200 4900 14100 4900
-Text Label 13900 3900 2    50   ~ 0
-SDA_CHA
-Text Label 13900 4000 2    50   ~ 0
-SCL_CHA
-Wire Wire Line
-	14200 3900 13900 3900
-Wire Wire Line
-	14200 4000 13900 4000
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5BEB2792
-P 16550 3300
-F 0 "J?" H 16630 3292 50  0000 L CNN
-F 1 "Conn_01x04" H 16630 3201 50  0000 L CNN
-F 2 "" H 16550 3300 50  0001 C CNN
-F 3 "~" H 16550 3300 50  0001 C CNN
-	1    16550 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5BEB2EBB
-P 16550 3800
-F 0 "J?" H 16630 3792 50  0000 L CNN
-F 1 "Conn_01x04" H 16630 3701 50  0000 L CNN
-F 2 "" H 16550 3800 50  0001 C CNN
-F 3 "~" H 16550 3800 50  0001 C CNN
-	1    16550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5BEB3119
-P 16550 4300
-F 0 "J?" H 16630 4292 50  0000 L CNN
-F 1 "Conn_01x04" H 16630 4201 50  0000 L CNN
-F 2 "" H 16550 4300 50  0001 C CNN
-F 3 "~" H 16550 4300 50  0001 C CNN
-	1    16550 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5BEB3202
-P 16550 4800
-F 0 "J?" H 16630 4792 50  0000 L CNN
-F 1 "Conn_01x04" H 16630 4701 50  0000 L CNN
-F 2 "" H 16550 4800 50  0001 C CNN
-F 3 "~" H 16550 4800 50  0001 C CNN
-	1    16550 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15200 3200 15300 3200
-Text Label 15300 3200 0    50   ~ 0
-SX00_A0
-Wire Wire Line
-	15200 3300 15300 3300
-Wire Wire Line
-	15200 3400 15300 3400
-Wire Wire Line
-	15200 3500 15300 3500
-Wire Wire Line
-	15200 3600 15300 3600
-Wire Wire Line
-	15200 3700 15300 3700
-Wire Wire Line
-	15200 3800 15300 3800
-Wire Wire Line
-	15200 3900 15300 3900
-Text Label 15300 3300 0    50   ~ 0
-SX00_A1
-Text Label 15300 3400 0    50   ~ 0
-SX00_A2
-Text Label 15300 3500 0    50   ~ 0
-SX00_A3
-Text Label 15300 3600 0    50   ~ 0
-SX00_A4
-Text Label 15300 3700 0    50   ~ 0
-SX00_A5
-Text Label 15300 3800 0    50   ~ 0
-SX00_A6
-Text Label 15300 3900 0    50   ~ 0
-SX00_A7
-Text Label 15300 4200 0    50   ~ 0
-SX00_B0
-Text Label 15300 4300 0    50   ~ 0
-SX00_B1
-Text Label 15300 4400 0    50   ~ 0
-SX00_B2
-Text Label 15300 4500 0    50   ~ 0
-SX00_B3
-Text Label 15300 4600 0    50   ~ 0
-SX00_B4
-Text Label 15300 4700 0    50   ~ 0
-SX00_B5
-Text Label 15300 4800 0    50   ~ 0
-SX00_B6
-Text Label 15300 4900 0    50   ~ 0
-SX00_B7
-Wire Wire Line
-	15200 4200 15300 4200
-Wire Wire Line
-	15200 4300 15300 4300
-Wire Wire Line
-	15200 4400 15300 4400
-Wire Wire Line
-	15200 4500 15300 4500
-Wire Wire Line
-	15200 4600 15300 4600
-Wire Wire Line
-	15200 4700 15300 4700
-Wire Wire Line
-	15200 4800 15300 4800
-Wire Wire Line
-	15200 4900 15300 4900
-Text Label 16250 3200 2    50   ~ 0
-SX00_A0
-Text Label 16250 3300 2    50   ~ 0
-SX00_A1
-Text Label 16250 3400 2    50   ~ 0
-SX00_A2
-Text Label 16250 3500 2    50   ~ 0
-SX00_A3
-Wire Wire Line
-	16350 3200 16250 3200
-Wire Wire Line
-	16350 3300 16250 3300
-Wire Wire Line
-	16350 3400 16250 3400
-Wire Wire Line
-	16350 3500 16250 3500
-Text Label 16250 3700 2    50   ~ 0
-SX00_A4
-Text Label 16250 3800 2    50   ~ 0
-SX00_A5
-Text Label 16250 3900 2    50   ~ 0
-SX00_A6
-Text Label 16250 4000 2    50   ~ 0
-SX00_A7
-Wire Wire Line
-	16350 3700 16250 3700
-Wire Wire Line
-	16350 3800 16250 3800
-Wire Wire Line
-	16350 3900 16250 3900
-Wire Wire Line
-	16350 4000 16250 4000
-Text Label 16250 4200 2    50   ~ 0
-SX00_B0
-Text Label 16250 4300 2    50   ~ 0
-SX00_B1
-Text Label 16250 4400 2    50   ~ 0
-SX00_B2
-Text Label 16250 4500 2    50   ~ 0
-SX00_B3
-Wire Wire Line
-	16350 4200 16250 4200
-Wire Wire Line
-	16350 4300 16250 4300
-Wire Wire Line
-	16350 4400 16250 4400
-Wire Wire Line
-	16350 4500 16250 4500
-Text Label 16250 4700 2    50   ~ 0
-SX00_B4
-Text Label 16250 4800 2    50   ~ 0
-SX00_B5
-Text Label 16250 4900 2    50   ~ 0
-SX00_B6
-Text Label 16250 5000 2    50   ~ 0
-SX00_B7
-Wire Wire Line
-	16350 4700 16250 4700
-Wire Wire Line
-	16250 4800 16350 4800
-Wire Wire Line
-	16350 4900 16250 4900
-Wire Wire Line
-	16350 5000 16250 5000
-$Comp
-L Device:R R?
-U 1 1 5BECFAAD
-P 13950 4400
-F 0 "R?" V 13743 4400 50  0000 C CNN
-F 1 "R" V 13834 4400 50  0000 C CNN
-F 2 "" V 13880 4400 50  0001 C CNN
-F 3 "~" H 13950 4400 50  0001 C CNN
-	1    13950 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13600 4400 13800 4400
-$Comp
-L Device:LED D?
-U 1 1 5BED2EAB
-P 13450 4400
-F 0 "D?" H 13441 4616 50  0000 C CNN
-F 1 "LED" H 13441 4525 50  0000 C CNN
-F 2 "" H 13450 4400 50  0001 C CNN
-F 3 "~" H 13450 4400 50  0001 C CNN
-	1    13450 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14100 4400 14200 4400
-Wire Wire Line
-	14100 4900 14100 5100
-Wire Wire Line
-	14200 3100 14050 3100
-Wire Wire Line
-	13500 3100 13500 4200
-$Comp
-L Device:R R?
-U 1 1 5BEE3B47
-P 13950 4200
-F 0 "R?" V 13743 4200 50  0000 C CNN
-F 1 "R" V 13834 4200 50  0000 C CNN
-F 2 "" V 13880 4200 50  0001 C CNN
-F 3 "~" H 13950 4200 50  0001 C CNN
-	1    13950 4200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14200 4200 14100 4200
-Wire Wire Line
-	13500 4200 13800 4200
-NoConn ~ 15300 3100
-Wire Wire Line
-	15200 4100 15300 4100
-NoConn ~ 15300 4100
-Wire Wire Line
-	14200 4600 14050 4600
-Wire Wire Line
-	14200 4700 14050 4700
-Text Label 14050 4600 2    50   ~ 0
-SX00_ADDR0
-Text Label 14050 4700 2    50   ~ 0
-SX00_ADDR1
-Text Label 15150 5650 0    50   ~ 0
-SX00_ADDR0
-Text Label 15150 6400 0    50   ~ 0
-SX00_ADDR1
-$Comp
-L Device:R R?
-U 1 1 5BEF60A7
-P 15600 5400
-F 0 "R?" V 15393 5400 50  0000 C CNN
-F 1 "R" V 15484 5400 50  0000 C CNN
-F 2 "" V 15530 5400 50  0001 C CNN
-F 3 "~" H 15600 5400 50  0001 C CNN
-	1    15600 5400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BEFDDD8
-P 15600 6150
-F 0 "R?" V 15393 6150 50  0000 C CNN
-F 1 "R" V 15484 6150 50  0000 C CNN
-F 2 "" V 15530 6150 50  0001 C CNN
-F 3 "~" H 15600 6150 50  0001 C CNN
-	1    15600 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15750 5400 15850 5400
-Wire Wire Line
-	15750 6150 15850 6150
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5BF00EFD
-P 15850 6150
-F 0 "#PWR?" H 15850 6000 50  0001 C CNN
-F 1 "+3.3V" V 15865 6278 50  0000 L CNN
-F 2 "" H 15850 6150 50  0001 C CNN
-F 3 "" H 15850 6150 50  0001 C CNN
-	1    15850 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5BF08174
-P 15850 5400
-F 0 "#PWR?" H 15850 5250 50  0001 C CNN
-F 1 "+3.3V" V 15865 5528 50  0000 L CNN
-F 2 "" H 15850 5400 50  0001 C CNN
-F 3 "" H 15850 5400 50  0001 C CNN
-	1    15850 5400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14750 5400 14750 5900
-Wire Wire Line
-	14750 5900 14600 5900
-Connection ~ 14750 5900
-Wire Wire Line
-	14750 5900 14750 6150
-$Comp
-L power:GND #PWR?
-U 1 1 5BF0CF0C
-P 14600 5900
-F 0 "#PWR?" H 14600 5650 50  0001 C CNN
-F 1 "GND" V 14605 5772 50  0000 R CNN
-F 2 "" H 14600 5900 50  0001 C CNN
-F 3 "" H 14600 5900 50  0001 C CNN
-	1    14600 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15050 5650 15150 5650
-Wire Wire Line
-	15050 6400 15150 6400
-Wire Wire Line
-	14050 3100 14050 2850
-Connection ~ 14050 3100
-Wire Wire Line
-	14050 3100 13500 3100
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5BF2B0A7
-P 14050 2850
-F 0 "#PWR?" H 14050 2700 50  0001 C CNN
-F 1 "+3.3V" H 14065 3023 50  0000 C CNN
-F 2 "" H 14050 2850 50  0001 C CNN
-F 3 "" H 14050 2850 50  0001 C CNN
-	1    14050 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5BF2CD9B
@@ -452,40 +83,6 @@ F 3 "" H 12200 6350 50  0001 C CNN
 	1    12200 6350
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5C32903E
-P 15050 5200
-F 0 "J?" V 15016 5012 50  0000 R CNN
-F 1 "Conn_01x03" V 14925 5012 50  0000 R CNN
-F 2 "" H 15050 5200 50  0001 C CNN
-F 3 "~" H 15050 5200 50  0001 C CNN
-	1    15050 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5C329803
-P 15050 5950
-F 0 "J?" V 15016 5762 50  0000 R CNN
-F 1 "Conn_01x03" V 14925 5762 50  0000 R CNN
-F 2 "" H 15050 5950 50  0001 C CNN
-F 3 "~" H 15050 5950 50  0001 C CNN
-	1    15050 5950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	15150 6150 15450 6150
-Wire Wire Line
-	15050 6150 15050 6400
-Wire Wire Line
-	14750 6150 14950 6150
-Wire Wire Line
-	15050 5400 15050 5650
-Wire Wire Line
-	15150 5400 15450 5400
-Wire Wire Line
-	14750 5400 14950 5400
 Wire Wire Line
 	10550 3250 10750 3250
 Wire Wire Line
@@ -693,8 +290,6 @@ F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.p
 	1    5350 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 4200 5100 4350
 Connection ~ 5350 4200
 Wire Wire Line
 	5350 4200 5100 4200
@@ -924,14 +519,8 @@ Wire Wire Line
 	4300 4200 4300 4500
 Wire Wire Line
 	4300 4500 5100 4500
-Connection ~ 5100 4500
-Wire Wire Line
-	5100 4500 5100 4650
 Wire Wire Line
 	4500 4350 5100 4350
-Connection ~ 5100 4350
-Wire Wire Line
-	5100 4350 5100 4500
 Wire Wire Line
 	4000 3500 4000 3150
 $Comp
@@ -947,7 +536,6 @@ F 3 "" H 4000 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5350 2400 5250 2400
-Connection ~ 5250 2400
 Wire Wire Line
 	5350 2400 5350 1950
 Connection ~ 5350 2400
@@ -1061,4 +649,195 @@ F 3 "" H 11600 6550 50  0001 C CNN
 	1    11600 6550
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J?
+U 1 1 5C1B5123
+P 4950 5450
+F 0 "J?" H 5000 5767 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 5000 5676 50  0000 C CNN
+F 2 "" H 4950 5450 50  0001 C CNN
+F 3 "~" H 4950 5450 50  0001 C CNN
+	1    4950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:TXB0104PW U?
+U 1 1 5C18D71A
+P 6300 5650
+F 0 "U?" H 6300 4864 50  0000 C CNN
+F 1 "TXB0104PW" H 6300 4773 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6410 5745 50  0001 C CNN
+	1    6300 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 2400
+Connection ~ 5100 4350
+Wire Wire Line
+	5100 4500 5100 4650
+Connection ~ 5100 4500
+Wire Wire Line
+	5100 4350 5100 4500
+Wire Wire Line
+	5100 4200 5100 4350
+Wire Wire Line
+	6700 5350 7100 5350
+Wire Wire Line
+	6700 5550 7100 5550
+Wire Wire Line
+	6700 5750 7100 5750
+Wire Wire Line
+	6700 5950 7100 5950
+Wire Wire Line
+	9150 5700 8850 5700
+Wire Wire Line
+	9150 5800 8850 5800
+Wire Wire Line
+	9150 5900 8850 5900
+Wire Wire Line
+	9150 6000 8850 6000
+Wire Wire Line
+	9150 6100 8850 6100
+Wire Wire Line
+	9150 6200 8850 6200
+Wire Wire Line
+	9150 6300 8850 6300
+Wire Wire Line
+	9150 6400 8850 6400
+Wire Wire Line
+	9150 6500 8850 6500
+Text Label 8850 5700 2    50   ~ 0
+pin6
+Text Label 8850 5800 2    50   ~ 0
+pin7
+Text Label 8850 5900 2    50   ~ 0
+pin8
+Text Label 8850 6000 2    50   ~ 0
+pin9
+Text Label 7100 5350 0    50   ~ 0
+pin6
+Text Label 7100 5550 0    50   ~ 0
+pin7
+Text Label 7100 5750 0    50   ~ 0
+pin8
+Text Label 7100 5950 0    50   ~ 0
+pin9
+$Comp
+L Logic_LevelTranslator:TXB0104PW U?
+U 1 1 5C3017C3
+P 6300 7450
+F 0 "U?" H 6300 6664 50  0000 C CNN
+F 1 "TXB0104PW" H 6300 6573 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6410 7545 50  0001 C CNN
+	1    6300 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 7150 7100 7150
+Wire Wire Line
+	6700 7350 7100 7350
+Wire Wire Line
+	6700 7550 7100 7550
+Wire Wire Line
+	6700 7750 7100 7750
+Text Label 7100 7150 0    50   ~ 0
+pin10
+Text Label 7100 7350 0    50   ~ 0
+pin11
+Text Label 7100 7550 0    50   ~ 0
+pin12
+Text Label 7100 7750 0    50   ~ 0
+pin13
+NoConn ~ 11000 5650
+Text Label 8850 6100 2    50   ~ 0
+pin10
+Text Label 8850 6200 2    50   ~ 0
+pin11
+Text Label 8850 6300 2    50   ~ 0
+pin12
+Text Label 8850 6400 2    50   ~ 0
+pin13
+Wire Wire Line
+	5250 5350 5900 5350
+Wire Wire Line
+	5250 5450 5900 5450
+Wire Wire Line
+	5900 5450 5900 5550
+Wire Wire Line
+	5900 5950 5250 5950
+Wire Wire Line
+	5250 5950 5250 5650
+Wire Wire Line
+	5900 5750 5350 5750
+Wire Wire Line
+	5350 5750 5350 5550
+Wire Wire Line
+	5350 5550 5250 5550
+Wire Wire Line
+	5900 7750 4750 7750
+Wire Wire Line
+	4750 7750 4750 5650
+Wire Wire Line
+	5900 7550 4550 7550
+Wire Wire Line
+	4750 5550 4550 5550
+Wire Wire Line
+	4550 5550 4550 7550
+Wire Wire Line
+	5900 7350 4350 7350
+Wire Wire Line
+	4350 5450 4750 5450
+Wire Wire Line
+	4350 5450 4350 7350
+Wire Wire Line
+	5900 7150 4150 7150
+Wire Wire Line
+	4750 5350 4150 5350
+Wire Wire Line
+	4150 5350 4150 7150
+Wire Wire Line
+	9150 6600 9150 6950
+Wire Wire Line
+	9650 6950 9150 6950
+Connection ~ 9150 6950
+Wire Wire Line
+	9150 6950 9150 7100
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C5742E1
+P 10650 7750
+F 0 "J?" H 10730 7742 50  0000 L CNN
+F 1 "Conn_01x02" H 10730 7651 50  0000 L CNN
+F 2 "" H 10650 7750 50  0001 C CNN
+F 3 "~" H 10650 7750 50  0001 C CNN
+	1    10650 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C5EE2B6
+P 9950 8050
+F 0 "J?" V 9823 8130 50  0000 L CNN
+F 1 "Conn_01x02" V 10100 7850 50  0000 L CNN
+F 2 "" H 9950 8050 50  0001 C CNN
+F 3 "~" H 9950 8050 50  0001 C CNN
+	1    9950 8050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 6950 9850 7850
+Wire Wire Line
+	9950 6950 9950 7850
+Wire Wire Line
+	10450 7850 10250 7850
+Wire Wire Line
+	10250 6950 10250 7850
+Wire Wire Line
+	10350 7750 10450 7750
+Wire Wire Line
+	10350 6950 10350 7750
+Wire Wire Line
+	11000 6450 11000 6550
+Connection ~ 11000 6550
 $EndSCHEMATC
