@@ -652,23 +652,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J?
 U 1 1 5C1B5123
-P 4950 5450
-F 0 "J?" H 5000 5767 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 5000 5676 50  0000 C CNN
-F 2 "" H 4950 5450 50  0001 C CNN
-F 3 "~" H 4950 5450 50  0001 C CNN
-	1    4950 5450
+P 5000 5450
+F 0 "J?" H 5050 5767 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 5050 5676 50  0000 C CNN
+F 2 "" H 5000 5450 50  0001 C CNN
+F 3 "~" H 5000 5450 50  0001 C CNN
+	1    5000 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Logic_LevelTranslator:TXB0104PW U?
 U 1 1 5C18D71A
-P 6300 5650
-F 0 "U?" H 6300 4864 50  0000 C CNN
-F 1 "TXB0104PW" H 6300 4773 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 4900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6410 5745 50  0001 C CNN
-	1    6300 5650
+P 6350 5650
+F 0 "U?" H 6350 4864 50  0000 C CNN
+F 1 "TXB0104PW" H 6350 4773 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6350 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6460 5745 50  0001 C CNN
+	1    6350 5650
 	1    0    0    -1  
 $EndComp
 Connection ~ 5250 2400
@@ -681,13 +681,13 @@ Wire Wire Line
 Wire Wire Line
 	5100 4200 5100 4350
 Wire Wire Line
-	6700 5350 7100 5350
+	6750 5350 7150 5350
 Wire Wire Line
-	6700 5550 7100 5550
+	6750 5550 7150 5550
 Wire Wire Line
-	6700 5750 7100 5750
+	6750 5750 7150 5750
 Wire Wire Line
-	6700 5950 7100 5950
+	6750 5950 7150 5950
 Wire Wire Line
 	9150 5700 8850 5700
 Wire Wire Line
@@ -704,8 +704,6 @@ Wire Wire Line
 	9150 6300 8850 6300
 Wire Wire Line
 	9150 6400 8850 6400
-Wire Wire Line
-	9150 6500 8850 6500
 Text Label 8850 5700 2    50   ~ 0
 pin6
 Text Label 8850 5800 2    50   ~ 0
@@ -714,40 +712,40 @@ Text Label 8850 5900 2    50   ~ 0
 pin8
 Text Label 8850 6000 2    50   ~ 0
 pin9
-Text Label 7100 5350 0    50   ~ 0
+Text Label 7150 5350 0    50   ~ 0
 pin6
-Text Label 7100 5550 0    50   ~ 0
+Text Label 7150 5550 0    50   ~ 0
 pin7
-Text Label 7100 5750 0    50   ~ 0
+Text Label 7150 5750 0    50   ~ 0
 pin8
-Text Label 7100 5950 0    50   ~ 0
+Text Label 7150 5950 0    50   ~ 0
 pin9
 $Comp
 L Logic_LevelTranslator:TXB0104PW U?
 U 1 1 5C3017C3
-P 6300 7450
-F 0 "U?" H 6300 6664 50  0000 C CNN
-F 1 "TXB0104PW" H 6300 6573 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 6700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6410 7545 50  0001 C CNN
-	1    6300 7450
+P 6350 7450
+F 0 "U?" H 6350 6664 50  0000 C CNN
+F 1 "TXB0104PW" H 6350 6573 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6350 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 6460 7545 50  0001 C CNN
+	1    6350 7450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 7150 7100 7150
+	6750 7150 7150 7150
 Wire Wire Line
-	6700 7350 7100 7350
+	6750 7350 7150 7350
 Wire Wire Line
-	6700 7550 7100 7550
+	6750 7550 7150 7550
 Wire Wire Line
-	6700 7750 7100 7750
-Text Label 7100 7150 0    50   ~ 0
+	6750 7750 7150 7750
+Text Label 7150 7150 0    50   ~ 0
 pin10
-Text Label 7100 7350 0    50   ~ 0
+Text Label 7150 7350 0    50   ~ 0
 pin11
-Text Label 7100 7550 0    50   ~ 0
+Text Label 7150 7550 0    50   ~ 0
 pin12
-Text Label 7100 7750 0    50   ~ 0
+Text Label 7150 7750 0    50   ~ 0
 pin13
 NoConn ~ 11000 5650
 Text Label 8850 6100 2    50   ~ 0
@@ -759,43 +757,43 @@ pin12
 Text Label 8850 6400 2    50   ~ 0
 pin13
 Wire Wire Line
-	5250 5350 5900 5350
+	5300 5350 5950 5350
 Wire Wire Line
-	5250 5450 5900 5450
+	5300 5450 5950 5450
 Wire Wire Line
-	5900 5450 5900 5550
+	5950 5450 5950 5550
 Wire Wire Line
-	5900 5950 5250 5950
+	5950 5950 5300 5950
 Wire Wire Line
-	5250 5950 5250 5650
+	5300 5950 5300 5650
 Wire Wire Line
-	5900 5750 5350 5750
+	5950 5750 5400 5750
 Wire Wire Line
-	5350 5750 5350 5550
+	5400 5750 5400 5550
 Wire Wire Line
-	5350 5550 5250 5550
+	5400 5550 5300 5550
 Wire Wire Line
-	5900 7750 4750 7750
+	5950 7750 4800 7750
 Wire Wire Line
-	4750 7750 4750 5650
+	4800 7750 4800 5650
 Wire Wire Line
-	5900 7550 4550 7550
+	5950 7550 4600 7550
 Wire Wire Line
-	4750 5550 4550 5550
+	4800 5550 4600 5550
 Wire Wire Line
-	4550 5550 4550 7550
+	4600 5550 4600 7550
 Wire Wire Line
-	5900 7350 4350 7350
+	5950 7350 4400 7350
 Wire Wire Line
-	4350 5450 4750 5450
+	4400 5450 4800 5450
 Wire Wire Line
-	4350 5450 4350 7350
+	4400 5450 4400 7350
 Wire Wire Line
-	5900 7150 4150 7150
+	5950 7150 4200 7150
 Wire Wire Line
-	4750 5350 4150 5350
+	4800 5350 4200 5350
 Wire Wire Line
-	4150 5350 4150 7150
+	4200 5350 4200 7150
 Wire Wire Line
 	9150 6600 9150 6950
 Wire Wire Line
@@ -840,4 +838,143 @@ Wire Wire Line
 Wire Wire Line
 	11000 6450 11000 6550
 Connection ~ 11000 6550
+$Comp
+L Device:LED_RGB D?
+U 1 1 5C1FA6BB
+P 7750 9100
+F 0 "D?" H 7750 9597 50  0000 C CNN
+F 1 "LED_RGB" H 7750 9506 50  0000 C CNN
+F 2 "" H 7750 9050 50  0001 C CNN
+F 3 "~" H 7750 9050 50  0001 C CNN
+	1    7750 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 6500 9150 6500
+Text Label 8350 6500 2    50   ~ 0
+di
+Wire Wire Line
+	9750 6950 9750 7400
+Text Label 9750 7400 3    50   ~ 0
+ci
+Wire Wire Line
+	7550 8900 7350 8900
+Wire Wire Line
+	7550 9100 7350 9100
+Wire Wire Line
+	7550 9300 7350 9300
+Wire Wire Line
+	7950 9300 8150 9300
+$Comp
+L power:GND #PWR?
+U 1 1 5C239049
+P 7350 9300
+F 0 "#PWR?" H 7350 9050 50  0001 C CNN
+F 1 "GND" V 7355 9172 50  0000 R CNN
+F 2 "" H 7350 9300 50  0001 C CNN
+F 3 "" H 7350 9300 50  0001 C CNN
+	1    7350 9300
+	0    1    1    0   
+$EndComp
+Text Label 7350 8900 2    50   ~ 0
+di
+Text Label 7350 9100 2    50   ~ 0
+ci
+$Comp
+L SparkFun-Aesthetics:5V #SUPPLY?
+U 1 1 5C2464D4
+P 8150 9300
+F 0 "#SUPPLY?" H 8150 9300 50  0001 L BNN
+F 1 "5V" V 8150 9429 50  0000 L CNN
+F 2 "" H 8150 9300 50  0001 C CNN
+F 3 "" H 8150 9300 50  0001 C CNN
+	1    8150 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_RGB D?
+U 1 1 5C28D9A7
+P 8750 9100
+F 0 "D?" H 8750 9597 50  0000 C CNN
+F 1 "LED_RGB" H 8750 9506 50  0000 C CNN
+F 2 "" H 8750 9050 50  0001 C CNN
+F 3 "~" H 8750 9050 50  0001 C CNN
+	1    8750 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 8900 8550 8900
+Wire Wire Line
+	7950 9100 8550 9100
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5C2B2C8C
+P 9850 8900
+F 0 "J?" H 9930 8892 50  0000 L CNN
+F 1 "Conn_01x04" H 9930 8801 50  0000 L CNN
+F 2 "" H 9850 8900 50  0001 C CNN
+F 3 "~" H 9850 8900 50  0001 C CNN
+	1    9850 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 9100 9150 9100
+Wire Wire Line
+	8550 9300 8550 9550
+Wire Wire Line
+	8950 9300 8950 9550
+$Comp
+L power:GND #PWR?
+U 1 1 5C337B49
+P 8550 9550
+F 0 "#PWR?" H 8550 9300 50  0001 C CNN
+F 1 "GND" H 8555 9377 50  0000 C CNN
+F 2 "" H 8550 9550 50  0001 C CNN
+F 3 "" H 8550 9550 50  0001 C CNN
+	1    8550 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Aesthetics:5V #SUPPLY?
+U 1 1 5C36E074
+P 8950 9550
+F 0 "#SUPPLY?" H 8950 9550 50  0001 L BNN
+F 1 "5V" H 8950 9724 50  0000 C CNN
+F 2 "" H 8950 9550 50  0001 C CNN
+F 3 "" H 8950 9550 50  0001 C CNN
+	1    8950 9550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 8900 9650 8900
+Wire Wire Line
+	9650 9000 9150 9000
+Wire Wire Line
+	9150 9000 9150 9100
+$Comp
+L power:GND #PWR?
+U 1 1 5C3A71A0
+P 9500 9100
+F 0 "#PWR?" H 9500 8850 50  0001 C CNN
+F 1 "GND" V 9505 8972 50  0000 R CNN
+F 2 "" H 9500 9100 50  0001 C CNN
+F 3 "" H 9500 9100 50  0001 C CNN
+	1    9500 9100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 9100 9500 9100
+Wire Wire Line
+	9650 8800 9500 8800
+$Comp
+L SparkFun-Aesthetics:5V #SUPPLY?
+U 1 1 5C3B89DA
+P 9500 8800
+F 0 "#SUPPLY?" H 9500 8800 50  0001 L BNN
+F 1 "5V" V 9500 8929 50  0000 L CNN
+F 2 "" H 9500 8800 50  0001 C CNN
+F 3 "" H 9500 8800 50  0001 C CNN
+	1    9500 8800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
