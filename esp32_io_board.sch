@@ -1643,4 +1643,6 @@ F 3 "" H 7500 6350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 10050 6950
+Text Label 7500 3300 0    50   ~ 0
+RESET
 $EndSCHEMATC
