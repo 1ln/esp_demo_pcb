@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/dano7900/pcb_designs/esp32_io_board/esp32_io_board.sch)
-    (date "Sat 22 Dec 2018 07:18:40 PM UTC")
+    (date "Sat 22 Dec 2018 10:38:04 PM UTC")
     (tool "Eeschema 5.0.1+dfsg1-3~bpo9+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -147,7 +147,7 @@
       (tstamp 5CDE9B74))
     (comp (ref D2)
       (value D_TVS)
-      (footprint Diode_SMD:D_SOD-323F)
+      (footprint Diode_SMD:D_SOD-123F)
       (datasheet ~)
       (libsource (lib Device) (part D_TVS) (description "Bidirectional transient-voltage-suppression diode"))
       (sheetpath (names /) (tstamps /))
@@ -385,7 +385,7 @@
       (tstamp 5C805139))
     (comp (ref D7)
       (value LED)
-      (footprint LED_SMD:LED_RGB_5050-6)
+      (footprint LED_SMD:LED_0603_1608Metric)
       (datasheet ~)
       (libsource (lib Device) (part LED) (description "Light emitting diode"))
       (sheetpath (names /) (tstamps /))
