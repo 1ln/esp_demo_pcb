@@ -1,6 +1,27 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# DIODESOD-123-adafruit
+#
+DEF DIODESOD-123-adafruit D 0 40 N N 1 L N
+F0 "D" -100 100 50 H V L BNN
+F1 "DIODESOD-123-adafruit" -100 -150 50 H V L BNN
+F2 "SOD-123" 30 150 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *SOD-123*
+$ENDFPLIST
+DRAW
+P 2 1 0 0 -50 -50 50 0 N
+P 2 1 0 0 -50 50 -50 -50 N
+P 2 1 0 0 50 0 -50 50 N
+P 2 1 0 0 50 0 50 -50 N
+P 2 1 0 0 50 50 50 0 N
+X A A -100 0 100 R 40 40 1 1 P
+X C C 100 0 100 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # ESP32-WROOM-ESP32-footprints-Shem-Lib
 #
 DEF ESP32-WROOM-ESP32-footprints-Shem-Lib U 0 40 Y Y 1 F N
