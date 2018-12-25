@@ -1727,21 +1727,21 @@ Wire Wire Line
 Wire Wire Line
 	14500 8100 15050 8100
 Wire Wire Line
-	12300 8550 14500 8550
+	12300 8550 12850 8550
 Wire Wire Line
 	14350 8650 14350 8200
 Wire Wire Line
 	14350 8200 15050 8200
 Wire Wire Line
-	12300 8650 14350 8650
+	12300 8650 12850 8650
 Wire Wire Line
 	14250 8750 14250 8400
 Wire Wire Line
-	12300 8750 14250 8750
+	12300 8750 12850 8750
 Wire Wire Line
 	14250 8400 15050 8400
 Wire Wire Line
-	12300 8850 14200 8850
+	12300 8850 12850 8850
 Wire Wire Line
 	14200 8600 15050 8600
 Wire Wire Line
@@ -1815,7 +1815,7 @@ L Jumper:SolderJumper_2_Open JP?
 U 1 1 5C387087
 P 13000 8950
 F 0 "JP?" H 12954 9018 50  0000 L CNN
-F 1 "SolderJumper_2_Open" H 13050 9650 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10000 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8950 50  0001 C CNN
 F 3 "~" H 13000 8950 50  0001 C CNN
 	1    13000 8950
@@ -1830,7 +1830,7 @@ L Jumper:SolderJumper_2_Open JP?
 U 1 1 5C3A9876
 P 13000 9050
 F 0 "JP?" H 12954 9118 50  0000 L CNN
-F 1 "SolderJumper_2_Open" H 13050 9750 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10100 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 9050 50  0001 C CNN
 F 3 "~" H 13000 9050 50  0001 C CNN
 	1    13000 9050
@@ -1864,4 +1864,56 @@ Wire Wire Line
 Connection ~ 13950 9800
 Wire Wire Line
 	13950 9800 13950 9950
+Wire Wire Line
+	13150 8850 14200 8850
+Wire Wire Line
+	13150 8750 14250 8750
+Wire Wire Line
+	13150 8650 14350 8650
+Wire Wire Line
+	13150 8550 14500 8550
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C239362
+P 13000 8850
+F 0 "JP?" H 12954 8918 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8850 50  0001 C CNN
+F 3 "~" H 13000 8850 50  0001 C CNN
+	1    13000 8850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C2397B0
+P 13000 8750
+F 0 "JP?" H 12954 8818 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10500 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8750 50  0001 C CNN
+F 3 "~" H 13000 8750 50  0001 C CNN
+	1    13000 8750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C239840
+P 13000 8650
+F 0 "JP?" H 12954 8718 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8650 50  0001 C CNN
+F 3 "~" H 13000 8650 50  0001 C CNN
+	1    13000 8650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C239B5B
+P 13000 8550
+F 0 "JP?" H 12954 8618 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 12950 10300 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8550 50  0001 C CNN
+F 3 "~" H 13000 8550 50  0001 C CNN
+	1    13000 8550
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

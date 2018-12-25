@@ -1228,10 +1228,6 @@ Wire Wire Line
 Wire Wire Line
 	12300 8450 12550 8450
 Wire Wire Line
-	12300 8950 12550 8950
-Wire Wire Line
-	12300 9050 12550 9050
-Wire Wire Line
 	12300 9150 12550 9150
 Wire Wire Line
 	12300 9250 12550 9250
@@ -1621,8 +1617,6 @@ NoConn ~ 16250 9200
 NoConn ~ 16250 9300
 NoConn ~ 16250 9400
 NoConn ~ 16250 9500
-NoConn ~ 16250 9700
-NoConn ~ 16250 9800
 NoConn ~ 9950 6950
 NoConn ~ 10250 6950
 NoConn ~ 10350 6950
@@ -1752,4 +1746,122 @@ Wire Wire Line
 	14200 8600 15050 8600
 Wire Wire Line
 	14200 8600 14200 8850
+$Comp
+L Memory_EEPROM:CAT24C256 U?
+U 1 1 5C224C63
+P 13950 9450
+F 0 "U?" H 13700 9000 50  0000 C CNN
+F 1 "CAT24C256" H 13600 9100 50  0000 C CNN
+F 2 "" H 13950 9450 50  0001 C CNN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF" H 13950 9450 50  0001 C CNN
+	1    13950 9450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13550 9450 13400 9450
+Wire Wire Line
+	13400 9450 13400 8950
+Wire Wire Line
+	12300 8950 12850 8950
+Wire Wire Line
+	13450 9050 13450 9550
+Wire Wire Line
+	13450 9550 13550 9550
+Wire Wire Line
+	12300 9050 12850 9050
+Wire Wire Line
+	14350 9550 14350 9450
+Wire Wire Line
+	14350 9150 13950 9150
+Connection ~ 14350 9350
+Wire Wire Line
+	14350 9350 14350 9150
+Connection ~ 14350 9450
+Wire Wire Line
+	14350 9450 14350 9350
+Wire Wire Line
+	13950 9750 13950 9800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C2F17EF
+P 13950 9950
+F 0 "#PWR?" H 13950 9800 50  0001 C CNN
+F 1 "+3.3V" H 13965 10123 50  0000 C CNN
+F 2 "" H 13950 9950 50  0001 C CNN
+F 3 "" H 13950 9950 50  0001 C CNN
+	1    13950 9950
+	-1   0    0    1   
+$EndComp
+Connection ~ 13450 9050
+Wire Wire Line
+	13400 8950 13600 8950
+Connection ~ 13400 8950
+Wire Wire Line
+	13450 9050 13600 9050
+Text Label 13600 8950 0    50   ~ 0
+id_clk
+Text Label 13600 9050 0    50   ~ 0
+id_sda
+Wire Wire Line
+	16250 9700 16450 9700
+Wire Wire Line
+	16250 9800 16450 9800
+Text Label 16450 9800 0    50   ~ 0
+id_clk
+Text Label 16450 9700 0    50   ~ 0
+id_sda
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C387087
+P 13000 8950
+F 0 "JP?" H 12954 9018 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 13050 9650 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8950 50  0001 C CNN
+F 3 "~" H 13000 8950 50  0001 C CNN
+	1    13000 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13150 8950 13400 8950
+Wire Wire Line
+	13150 9050 13450 9050
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C3A9876
+P 13000 9050
+F 0 "JP?" H 12954 9118 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 13050 9750 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 9050 50  0001 C CNN
+F 3 "~" H 13000 9050 50  0001 C CNN
+	1    13000 9050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15050 8300
+NoConn ~ 15050 8500
+NoConn ~ 15050 8700
+NoConn ~ 15050 8800
+NoConn ~ 15050 8900
+NoConn ~ 16250 8600
+Wire Wire Line
+	13550 9350 13500 9350
+Wire Wire Line
+	13500 9350 13500 9800
+$Comp
+L Device:R_Small R?
+U 1 1 5C4EC3FB
+P 13700 9800
+F 0 "R?" V 13504 9800 50  0000 C CNN
+F 1 "R_Small" V 13595 9800 50  0000 C CNN
+F 2 "" H 13700 9800 50  0001 C CNN
+F 3 "~" H 13700 9800 50  0001 C CNN
+	1    13700 9800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13500 9800 13600 9800
+Wire Wire Line
+	13800 9800 13950 9800
+Connection ~ 13950 9800
+Wire Wire Line
+	13950 9800 13950 9950
 $EndSCHEMATC
