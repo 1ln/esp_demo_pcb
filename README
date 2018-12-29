@@ -1,0 +1,64 @@
+ESP32 Modular PCB System compatible with Raspberry Pi 3
+
+Notice: Project is currently in development and has not been fully tested.
+
+Copyright: OSHW
+
+As an open source pcb, You choose to use at your own risk. 
+
+You are free to use under the terms of OSHW, however if you are interested in producing this as a product it would be my preference to enjoy a royalty of any profits made and/or credit. Please don't hesitate to contact me if you are interested in producing this.
+
+
+Developed by Dan Olson
+
+
+Features:
+
+- Uses the fast and popular ESP32 (castellated via version) development board as the main controller. These boards are fairly low cost and provide wifi,bluetooth among various other onboard functions.
+
+- Same dimensions as the 40 pin header system on the raspberry pi A+, so it should also fit within the bounds of the raspberry pi 3.  
+
+- 40 pin breakout is met with an SDA/SCL I2C jumper to the TCA9548 I2C expander chip. Esp32's onboard I2C also has a route to the 40 pin header, although it does not have a configurable jumper.
+
+- SPI bus is also direct connected (without jumpers to the 40 pin header.
+
+- TCA9548 breaks out to 4 sets of 2 pins each for extra I2C connectivity.
+ 
+- I2C and SPI connection to 40 pin header provide the ability to create a product line of inexpensive expander hat's that could potentially be reused on both this product and raspberry pi's, creating a unique reusuable and modular system of hats.
+
+- Existing hats can possibly be used if cognizant of exisitng connections and proper testing and research is performed first. At the very least you can simply attach a board (if it is powered by 3.3v) and make a connection to the onboard I2C headers.
+
+- 8 pwm/multifunction ports are broken out into a 2 by 4 header that has been strategically placed near the 4 i2c port headers. Hopefully, this is a good spot, so that a raspberry pi w sized "ESP32 attach board" can make use of these ports. In addition, two extra boards have been broken in a seperate headers for a total of 10 I/O ports.
+
+- A micro usb port has been added to the port to provide a way to program the chip. This uses the CP2102.
+
+- Board is a 2 layer to reduce costs.
+
+- One onboard led for programming and 2 additional onboard led's for tx/rx communication on the cp2102 chip.
+
+
+Additional Planned Features:
+
+- Add a led power indicator
+
+- Add an extra onboard I2C sensor for the one unused i2c port. This is only if space permits. Some ideas: extra temperature sensor, cryptographic chip ith additional RNG or an extra eeprom (possibly ferroelectric ram)
+
+
+TODO:
+
+Order and test first iteration of board
+Label all important pins
+Write a small testing script to demonstrate functionality
+Develop and design the first attach board and test it.
+Work on planned features
+
+
+Other potential issues that need testing:
+
+Testing of the power system to a seperate HAT will be the first order of business to ensure I designed that correctly.
+
+Testing multiple I2C connections simultaneously and making sure signal integreity is exceptional or at least adequate (it is a two layer board).
+
+
+
+
