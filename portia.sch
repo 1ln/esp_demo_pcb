@@ -587,7 +587,7 @@ U 1 1 5D3EDAFB
 P 4000 8550
 F 0 "F1" V 3795 8550 50  0000 C CNN
 F 1 "mf-msmf050-2" V 3900 8650 50  0000 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 4050 8350 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4050 8350 50  0001 L CNN
 F 3 "~" H 4000 8550 50  0001 C CNN
 	1    4000 8550
 	0    1    1    0   
@@ -1054,61 +1054,6 @@ $EndComp
 NoConn ~ 10050 6950
 Text Label 7250 8250 0    50   ~ 0
 RESET
-$Comp
-L SparkFun-Boards:RASPBERRYPI-40-PIN-GPIO J5
-U 1 1 5C21B215
-P 15650 8600
-F 0 "J5" H 15650 9865 50  0000 C CNN
-F 1 "RASPBERRYPI-40-PIN-GPIO" H 15650 9774 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 15680 8750 20  0001 C CNN
-F 3 "" H 15650 8600 50  0001 C CNN
-	1    15650 8600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	16250 7600 16600 7600
-Wire Wire Line
-	16250 7700 16600 7700
-Text Label 16600 7600 0    50   ~ 0
-sda0
-Text Label 16600 7700 0    50   ~ 0
-scl0
-Wire Wire Line
-	15050 9100 15050 9200
-Wire Wire Line
-	15050 10000 14700 10000
-Connection ~ 15050 9200
-Wire Wire Line
-	15050 9200 15050 9300
-Connection ~ 15050 9300
-Wire Wire Line
-	15050 9300 15050 9400
-Connection ~ 15050 9400
-Wire Wire Line
-	15050 9400 15050 9500
-Connection ~ 15050 9500
-Wire Wire Line
-	15050 9500 15050 9600
-Connection ~ 15050 9600
-Wire Wire Line
-	15050 9600 15050 9700
-Connection ~ 15050 9700
-Wire Wire Line
-	15050 9700 15050 9800
-Connection ~ 15050 9800
-Wire Wire Line
-	15050 9800 15050 10000
-$Comp
-L power:GND #PWR0133
-U 1 1 5C2B3F61
-P 14700 10000
-F 0 "#PWR0133" H 14700 9750 50  0001 C CNN
-F 1 "GND" V 14705 9872 50  0000 R CNN
-F 2 "" H 14700 10000 50  0001 C CNN
-F 3 "" H 14700 10000 50  0001 C CNN
-	1    14700 10000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	11400 5250 11400 4900
 Text Label 11400 4900 1    50   ~ 0
@@ -1127,14 +1072,6 @@ Text Label 11850 6050 0    50   ~ 0
 tx
 Text Label 11850 6150 0    50   ~ 0
 rx
-Wire Wire Line
-	16250 7900 16600 7900
-Wire Wire Line
-	16250 8000 16600 8000
-Text Label 16600 7900 0    50   ~ 0
-rx
-Text Label 16600 8000 0    50   ~ 0
-tx
 Text Label 12200 5150 0    50   ~ 0
 mosi
 Text Label 12200 5750 0    50   ~ 0
@@ -1143,45 +1080,10 @@ Text Label 12200 5850 0    50   ~ 0
 clk
 Text Label 12200 5950 0    50   ~ 0
 cs
-Text Label 16600 8200 0    50   ~ 0
-clk
-Wire Wire Line
-	16250 8200 16600 8200
-Wire Wire Line
-	16250 8300 16600 8300
-Wire Wire Line
-	16250 8400 16600 8400
-Wire Wire Line
-	16250 8500 16600 8500
-Text Label 16600 8300 0    50   ~ 0
-miso
-Text Label 16600 8400 0    50   ~ 0
-mosi
-Text Label 16600 8500 0    50   ~ 0
-cs
-NoConn ~ 16250 8800
-NoConn ~ 16250 8900
-NoConn ~ 16250 9000
-NoConn ~ 16250 9100
-NoConn ~ 16250 9200
-NoConn ~ 16250 9300
-NoConn ~ 16250 9400
-NoConn ~ 16250 9500
 NoConn ~ 9950 6950
 NoConn ~ 10250 6950
 NoConn ~ 10350 6950
 NoConn ~ 9850 6950
-NoConn ~ 15050 7600
-NoConn ~ 15050 7700
-Wire Wire Line
-	15050 7800 14950 7800
-Wire Wire Line
-	15050 7900 14950 7900
-Wire Wire Line
-	14950 7900 14950 7800
-Connection ~ 14950 7800
-Wire Wire Line
-	14950 7800 14600 7800
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5C6145C5
@@ -1247,130 +1149,6 @@ F 2 "MountingHole:MountingHole_3mm" H 15050 10850 50  0001 C CNN
 F 3 "~" H 15050 10850 50  0001 C CNN
 	1    15050 10850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13850 8550 13850 8100
-Wire Wire Line
-	13850 8100 15050 8100
-Wire Wire Line
-	12300 8550 12850 8550
-Wire Wire Line
-	12300 8850 12850 8850
-Wire Wire Line
-	14200 8600 15050 8600
-Wire Wire Line
-	14200 8600 14200 8850
-$Comp
-L Memory_EEPROM:CAT24C256 U7
-U 1 1 5C224C63
-P 13950 9450
-F 0 "U7" H 13700 9000 50  0000 C CNN
-F 1 "CAT24C256" H 13600 9100 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm" H 13950 9450 50  0001 C CNN
-F 3 "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF" H 13950 9450 50  0001 C CNN
-	1    13950 9450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13550 9450 13400 9450
-Wire Wire Line
-	13400 9450 13400 9150
-Wire Wire Line
-	13450 9050 13450 9300
-Wire Wire Line
-	13450 9550 13550 9550
-Wire Wire Line
-	14350 9550 14350 9450
-Wire Wire Line
-	14350 9150 13950 9150
-Connection ~ 14350 9350
-Wire Wire Line
-	14350 9350 14350 9150
-Connection ~ 14350 9450
-Wire Wire Line
-	14350 9450 14350 9350
-Wire Wire Line
-	13950 9750 13950 9800
-$Comp
-L power:+3.3V #PWR0143
-U 1 1 5C2F17EF
-P 13950 9950
-F 0 "#PWR0143" H 13950 9800 50  0001 C CNN
-F 1 "+3.3V" H 13965 10123 50  0000 C CNN
-F 2 "" H 13950 9950 50  0001 C CNN
-F 3 "" H 13950 9950 50  0001 C CNN
-	1    13950 9950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13400 8950 13600 8950
-Wire Wire Line
-	13450 9050 13600 9050
-Text Label 13600 8950 0    50   ~ 0
-id_clk
-Text Label 13600 9050 0    50   ~ 0
-id_sda
-Wire Wire Line
-	16250 9700 16450 9700
-Wire Wire Line
-	16250 9800 16450 9800
-Text Label 16450 9800 0    50   ~ 0
-id_clk
-Text Label 16450 9700 0    50   ~ 0
-id_sda
-NoConn ~ 15050 8300
-NoConn ~ 15050 8500
-NoConn ~ 15050 8700
-NoConn ~ 15050 8800
-NoConn ~ 15050 8900
-NoConn ~ 16250 8600
-Wire Wire Line
-	13550 9350 13500 9350
-Wire Wire Line
-	13500 9350 13500 9800
-$Comp
-L Device:R_Small R12
-U 1 1 5C4EC3FB
-P 13700 9800
-F 0 "R12" V 13504 9800 50  0000 C CNN
-F 1 "R_Small" V 13595 9800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13700 9800 50  0001 C CNN
-F 3 "~" H 13700 9800 50  0001 C CNN
-	1    13700 9800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13500 9800 13600 9800
-Wire Wire Line
-	13800 9800 13950 9800
-Connection ~ 13950 9800
-Wire Wire Line
-	13950 9800 13950 9900
-Wire Wire Line
-	13150 8850 14200 8850
-Wire Wire Line
-	13150 8550 13850 8550
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5C239362
-P 13000 8850
-F 0 "JP7" H 12954 8918 50  0000 L CNN
-F 1 "SolderJumper_2_Open" H 14200 10350 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8850 50  0001 C CNN
-F 3 "~" H 13000 8850 50  0001 C CNN
-	1    13000 8850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5C239B5B
-P 13000 8550
-F 0 "JP4" H 12954 8618 50  0000 L CNN
-F 1 "SolderJumper_2_Open" H 14200 10450 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 8550 50  0001 C CNN
-F 3 "~" H 13000 8550 50  0001 C CNN
-	1    13000 8550
-	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J4
@@ -1469,8 +1247,6 @@ NoConn ~ 12300 8650
 NoConn ~ 12300 8750
 NoConn ~ 12300 9150
 NoConn ~ 12300 9250
-NoConn ~ 15050 8200
-NoConn ~ 15050 8400
 $Comp
 L power:VCC #PWR0107
 U 1 1 5C42A787
@@ -1482,79 +1258,10 @@ F 3 "" H 10850 4000 50  0001 C CNN
 	1    10850 4000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 5C438DC8
-P 14450 9150
-F 0 "#PWR0119" H 14450 8900 50  0001 C CNN
-F 1 "GND" V 14455 9022 50  0000 R CNN
-F 2 "" H 14450 9150 50  0001 C CNN
-F 3 "" H 14450 9150 50  0001 C CNN
-	1    14450 9150
-	0    -1   -1   0   
-$EndComp
-Connection ~ 14350 9150
-Wire Wire Line
-	14350 9150 14450 9150
-$Comp
-L Device:R_Small R16
-U 1 1 5C2A3FD8
-P 13200 9300
-F 0 "R16" V 13004 9300 50  0000 C CNN
-F 1 "R_Small" V 13095 9300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13200 9300 50  0001 C CNN
-F 3 "~" H 13200 9300 50  0001 C CNN
-	1    13200 9300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 5C2E4AA2
-P 13200 9150
-F 0 "R15" V 13004 9150 50  0000 C CNN
-F 1 "R_Small" V 13095 9150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13200 9150 50  0001 C CNN
-F 3 "~" H 13200 9150 50  0001 C CNN
-	1    13200 9150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	12550 9550 12550 9800
-Wire Wire Line
-	13300 9150 13400 9150
-Connection ~ 13400 9150
-Wire Wire Line
-	13400 9150 13400 8950
-Wire Wire Line
-	13300 9300 13450 9300
-Connection ~ 13450 9300
-Wire Wire Line
-	13450 9300 13450 9550
-Wire Wire Line
-	13100 9150 13050 9150
-Wire Wire Line
-	13100 9300 13050 9300
-Wire Wire Line
-	13050 9150 13050 9300
-Wire Wire Line
-	13050 9900 13950 9900
-Connection ~ 13050 9300
-Wire Wire Line
-	13050 9300 13050 9900
-Connection ~ 13950 9900
-Wire Wire Line
-	13950 9900 13950 9950
 NoConn ~ 12300 8950
 NoConn ~ 12300 9050
-$Comp
-L power:+3.3V #PWR0134
-U 1 1 5C5CAF79
-P 14600 7800
-F 0 "#PWR0134" H 14600 7650 50  0001 C CNN
-F 1 "+3.3V" V 14615 7928 50  0000 L CNN
-F 2 "" H 14600 7800 50  0001 C CNN
-F 3 "" H 14600 7800 50  0001 C CNN
-	1    14600 7800
-	0    -1   -1   0   
-$EndComp
+NoConn ~ 12300 8550
+NoConn ~ 12300 8850
 $EndSCHEMATC
