@@ -925,19 +925,15 @@ Wire Wire Line
 	12300 8350 12550 8350
 Wire Wire Line
 	12300 8450 12550 8450
-Wire Wire Line
-	9150 5500 8250 5500
-Wire Wire Line
-	9150 5600 8250 5600
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5C5C727F
-P 8050 5600
-F 0 "J3" H 8130 5592 50  0000 L CNN
-F 1 "Conn_01x02" H 8130 5501 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 5600 50  0001 C CNN
-F 3 "~" H 8050 5600 50  0001 C CNN
-	1    8050 5600
+P 8000 5600
+F 0 "J3" H 8080 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 8080 5501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8000 5600 50  0001 C CNN
+F 3 "~" H 8000 5600 50  0001 C CNN
+	1    8000 5600
 	-1   0    0    1   
 $EndComp
 NoConn ~ 10150 6950
@@ -1085,10 +1081,6 @@ F 3 "~" H 15050 10850 50  0001 C CNN
 	1    15050 10850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 6500 9150 6500
-Wire Wire Line
-	9750 6950 9750 7400
 Wire Wire Line
 	10950 7850 10950 7500
 Connection ~ 10950 7850
@@ -1327,36 +1319,6 @@ Connection ~ 13600 9700
 Wire Wire Line
 	13600 9700 14800 9700
 $Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5C503C93
-P 12750 8950
-F 0 "J5" H 12830 8942 50  0000 L CNN
-F 1 "Conn_01x02" H 12830 8851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12750 8950 50  0001 C CNN
-F 3 "~" H 12750 8950 50  0001 C CNN
-	1    12750 8950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5C50450C
-P 12750 9150
-F 0 "J6" H 12830 9142 50  0000 L CNN
-F 1 "Conn_01x02" H 12830 9051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12750 9150 50  0001 C CNN
-F 3 "~" H 12750 9150 50  0001 C CNN
-	1    12750 9150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12300 8950 12550 8950
-Wire Wire Line
-	12300 9050 12550 9050
-Wire Wire Line
-	12300 9150 12550 9150
-Wire Wire Line
-	12300 9250 12550 9250
-$Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5C544DE8
 P 11400 4700
@@ -1367,21 +1329,6 @@ F 3 "~" H 11400 4700 50  0001 C CNN
 	1    11400 4700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5C5879E7
-P 7600 5800
-F 0 "J2" H 7680 5792 50  0000 L CNN
-F 1 "Conn_01x02" H 7680 5701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 5800 50  0001 C CNN
-F 3 "~" H 7600 5800 50  0001 C CNN
-	1    7600 5800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7800 5700 9150 5700
-Wire Wire Line
-	7800 5800 9150 5800
 Wire Wire Line
 	8200 5900 9150 5900
 Wire Wire Line
@@ -1395,29 +1342,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5C5D87D3
-P 8000 6100
-F 0 "J4" H 7920 5675 50  0000 C CNN
-F 1 "Conn_01x04" H 7920 5766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 6100 50  0001 C CNN
-F 3 "~" H 8000 6100 50  0001 C CNN
-	1    8000 6100
+P 8000 5900
+F 0 "J4" H 7920 5475 50  0000 C CNN
+F 1 "Conn_01x04" H 7920 5566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 5900 50  0001 C CNN
+F 3 "~" H 8000 5900 50  0001 C CNN
+	1    8000 5900
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J8
 U 1 1 5C5EC669
-P 8000 6500
-F 0 "J8" H 7920 6075 50  0000 C CNN
-F 1 "Conn_01x04" H 7920 6166 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 6500 50  0001 C CNN
-F 3 "~" H 8000 6500 50  0001 C CNN
-	1    8000 6500
+P 8000 6300
+F 0 "J8" H 7920 5875 50  0000 C CNN
+F 1 "Conn_01x04" H 7920 5966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 6300 50  0001 C CNN
+F 3 "~" H 8000 6300 50  0001 C CNN
+	1    8000 6300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8200 6600 8200 7400
-Wire Wire Line
-	8200 7400 9750 7400
 $Comp
 L Connector_Generic:Conn_01x02 J15
 U 1 1 5C60D7E6
@@ -1470,6 +1413,25 @@ F 1 "Conn_01x02" V 11400 5800 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11650 6050 50  0001 C CNN
 F 3 "~" H 11650 6050 50  0001 C CNN
 	1    11650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5700 9150 5700
+Wire Wire Line
+	8200 5800 9150 5800
+Wire Wire Line
+	8200 5500 9150 5500
+Wire Wire Line
+	8200 5600 9150 5600
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5C3C0BB7
+P 14400 10850
+F 0 "H7" H 14500 10896 50  0000 L CNN
+F 1 "MountingHole" H 14600 10500 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 14400 10850 50  0001 C CNN
+F 3 "~" H 14400 10850 50  0001 C CNN
+	1    14400 10850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
