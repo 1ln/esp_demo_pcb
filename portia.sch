@@ -1537,4 +1537,6 @@ $EndComp
 Wire Wire Line
 	7250 5350 7250 5450
 Connection ~ 7250 5450
+Connection ~ 7250 5350
+Connection ~ 11250 9650
 $EndSCHEMATC
