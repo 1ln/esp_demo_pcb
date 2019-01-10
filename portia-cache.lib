@@ -467,21 +467,6 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# SparkFun-Aesthetics_3.3V
-#
-DEF SparkFun-Aesthetics_3.3V #SUPPLY 0 40 N N 1 L P
-F0 "#SUPPLY" 0 0 50 H I L BNN
-F1 "SparkFun-Aesthetics_3.3V" -40 140 50 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 0 0 0 100 N
-P 2 1 0 0 0 100 -30 50 N
-P 2 1 0 0 30 50 0 100 N
-X 3.3V ~ 0 0 100 U 40 40 1 1 W N
-ENDDRAW
-ENDDEF
-#
 # SparkFun-Sensors_ISL29125
 #
 DEF SparkFun-Sensors_ISL29125 M 0 40 Y Y 1 L N
