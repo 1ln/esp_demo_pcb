@@ -1305,7 +1305,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 5600 9150 5600
 $Comp
-L Mechanical:MountingHole H7
+L Mechanical:MountingHole_Pad H7
 U 1 1 5C3C0BB7
 P 14400 10850
 F 0 "H7" H 14500 10896 50  0000 L CNN
@@ -1535,8 +1535,16 @@ F 3 "" H 15150 9300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7250 5350 7250 5450
-Connection ~ 7250 5450
-Connection ~ 7250 5350
-Connection ~ 11250 9650
+	14400 10950 14400 11050
+$Comp
+L power:GND #PWR?
+U 1 1 5C4D1D4B
+P 14400 11050
+F 0 "#PWR?" H 14400 10800 50  0001 C CNN
+F 1 "GND" V 14405 10922 50  0000 R CNN
+F 2 "" H 14400 11050 50  0001 C CNN
+F 3 "" H 14400 11050 50  0001 C CNN
+	1    14400 11050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
