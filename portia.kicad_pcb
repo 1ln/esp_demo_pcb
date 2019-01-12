@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 11)
+    (drawings 18)
     (tracks 498)
     (zones 0)
     (modules 64)
@@ -59,8 +59,8 @@
     (pad_drill 1)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
-    (aux_axis_origin 218.0795 107.272)
-    (grid_origin 218.02 130.28)
+    (aux_axis_origin 167.22 97.514)
+    (grid_origin 163.156 97.514)
     (visible_elements FFFFF77F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -589,7 +589,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
-  (module ESP32-footprints-Lib:ESP32-WROOM (layer F.Cu) (tedit 57D08EA8) (tstamp 5C31DBF9)
+  (module ESP32-footprints-Lib:ESP32-WROOM (layer F.Cu) (tedit 5C3A366E) (tstamp 5C31DBF9)
     (at 190.5 95.25 180)
     (path /5BEADA65)
     (fp_text reference U4 (at 2.96 1.546 180) (layer F.SilkS)
@@ -2859,6 +2859,19 @@
     )
   )
 
+  (gr_circle (center 163.156 97.514) (end 163.156 97.768) (layer F.SilkS) (width 0.2) (tstamp 5C3A4EB8))
+  (gr_circle (center 167.22 97.514) (end 167.22 97.768) (layer F.SilkS) (width 0.2))
+  (gr_circle (center 165.95 97.573961) (end 166.458 97.827961) (layer F.SilkS) (width 0.2) (tstamp 5C3A4E82))
+  (gr_circle (center 164.426 97.573961) (end 164.934 97.827961) (layer F.SilkS) (width 0.2))
+  (gr_text "Portia Board\n\n" (at 166.204 95.482) (layer F.SilkS) (tstamp 5C3A4E49)
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (gr_text OSHW (at 166.204 95.99) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (gr_text Spiderbox (at 165.95 93.45) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.125)))
+  )
   (gr_line (start 184.912 112.246) (end 184.912 118.342) (layer F.SilkS) (width 0.2))
   (gr_line (start 172.1865 120.142) (end 172.1865 119.888) (layer F.SilkS) (width 0.2))
   (gr_line (start 172.1865 119.126) (end 172.1865 120.142) (layer F.SilkS) (width 0.2))
