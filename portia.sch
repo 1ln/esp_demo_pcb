@@ -38,8 +38,6 @@ F 3 "" H 9150 7100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9150 5300 9000 5300
-Text Label 11450 6150 0    50   ~ 0
-rxd0
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5BF2CD9B
@@ -236,8 +234,6 @@ F 3 "" H 9600 3250 50  0001 C CNN
 	1    9600 3250
 	0    -1   -1   0   
 $EndComp
-Text Label 11450 6050 0    50   ~ 0
-txd0
 Wire Wire Line
 	8600 5400 8250 5400
 Connection ~ 8600 5400
@@ -354,12 +350,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5C67FC32
-P 11950 5350
-F 0 "J10" H 12030 5342 50  0000 L CNN
-F 1 "txrx" H 11950 5150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11950 5350 50  0001 C CNN
-F 3 "~" H 11950 5350 50  0001 C CNN
-	1    11950 5350
+P 11650 6050
+F 0 "J10" H 11730 6042 50  0000 L CNN
+F 1 "txrx" H 11650 5850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11650 6050 50  0001 C CNN
+F 3 "~" H 11650 6050 50  0001 C CNN
+	1    11650 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -517,9 +513,9 @@ Wire Wire Line
 	8650 6500 8650 7150
 Text Label 11400 4550 1    50   ~ 0
 scl
-Text Label 18300 7000 0    50   ~ 0
-sda
 Text Label 18300 7100 0    50   ~ 0
+sda
+Text Label 18300 7000 0    50   ~ 0
 scl
 $Comp
 L power:+3.3V #PWR0103
@@ -561,40 +557,40 @@ usb_tx_-
 $Comp
 L Connector:USB_B_Micro J8
 U 1 1 5C6C2176
-P 15350 2400
-F 0 "J8" H 15121 2298 50  0000 R CNN
-F 1 "USB_B_Micro" H 15121 2389 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 15500 2350 50  0001 C CNN
-F 3 "~" H 15500 2350 50  0001 C CNN
-	1    15350 2400
+P 14250 3500
+F 0 "J8" H 14021 3398 50  0000 R CNN
+F 1 "USB_B_Micro" H 14021 3489 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 14400 3450 50  0001 C CNN
+F 3 "~" H 14400 3450 50  0001 C CNN
+	1    14250 3500
 	-1   0    0    1   
 $EndComp
-Text Label 14000 2300 2    50   ~ 0
+Text Label 12900 3400 2    50   ~ 0
 usb_tx_-
-Text Label 14000 2400 2    50   ~ 0
+Text Label 12900 3500 2    50   ~ 0
 usb_rx_+
 Wire Wire Line
-	15350 2000 15350 1550
+	14250 3100 14250 2650
 $Comp
 L power:GND #PWR0117
 U 1 1 5C71FB50
-P 15350 1550
-F 0 "#PWR0117" H 15350 1300 50  0001 C CNN
-F 1 "GND" H 15355 1377 50  0000 C CNN
-F 2 "" H 15350 1550 50  0001 C CNN
-F 3 "" H 15350 1550 50  0001 C CNN
-	1    15350 1550
+P 14250 2650
+F 0 "#PWR0117" H 14250 2400 50  0001 C CNN
+F 1 "GND" H 14255 2477 50  0000 C CNN
+F 2 "" H 14250 2650 50  0001 C CNN
+F 3 "" H 14250 2650 50  0001 C CNN
+	1    14250 2650
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR0119
 U 1 1 5C88E71E
-P 14550 2600
-F 0 "#PWR0119" H 14550 2450 50  0001 C CNN
-F 1 "+3.3V" V 14565 2728 50  0000 L CNN
-F 2 "" H 14550 2600 50  0001 C CNN
-F 3 "" H 14550 2600 50  0001 C CNN
-	1    14550 2600
+P 13450 3700
+F 0 "#PWR0119" H 13450 3550 50  0001 C CNN
+F 1 "+3.3V" V 13465 3828 50  0000 L CNN
+F 2 "" H 13450 3700 50  0001 C CNN
+F 3 "" H 13450 3700 50  0001 C CNN
+	1    13450 3700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -993,17 +989,6 @@ Wire Wire Line
 	14250 6200 14250 5500
 Wire Wire Line
 	14250 5500 14550 5500
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J6
-U 1 1 5CC730A6
-P 14750 6400
-F 0 "J6" H 14800 6717 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 14800 6626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 14750 6400 50  0001 C CNN
-F 3 "~" H 14750 6400 50  0001 C CNN
-	1    14750 6400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15050 6300 16750 6300
 Wire Wire Line
@@ -1013,27 +998,7 @@ Wire Wire Line
 Wire Wire Line
 	15050 6600 16750 6600
 Wire Wire Line
-	16750 6700 14550 6700
-Wire Wire Line
-	14550 6700 14550 6600
-Wire Wire Line
-	16750 6800 14450 6800
-Wire Wire Line
-	14450 6800 14450 6500
-Wire Wire Line
-	14450 6500 14550 6500
-Wire Wire Line
-	16750 6900 14350 6900
-Wire Wire Line
-	14350 6900 14350 6400
-Wire Wire Line
-	14350 6400 14550 6400
-Wire Wire Line
 	16750 7000 14250 7000
-Wire Wire Line
-	14250 7000 14250 6300
-Wire Wire Line
-	14250 6300 14550 6300
 $Comp
 L Device:Crystal_Small Y1
 U 1 1 5CD1C22B
@@ -1220,10 +1185,45 @@ Connection ~ 12000 6550
 Wire Wire Line
 	12000 6550 12450 6550
 Wire Wire Line
-	14000 2300 15050 2300
+	12900 3400 13950 3400
 Wire Wire Line
-	14000 2400 15050 2400
+	12900 3500 13950 3500
 Wire Wire Line
-	15050 2600 14550 2600
-NoConn ~ 15450 2000
+	13950 3700 13450 3700
+NoConn ~ 14350 3100
+Wire Wire Line
+	16750 6900 14350 6900
+Wire Wire Line
+	16750 6800 14450 6800
+Wire Wire Line
+	16750 6700 14550 6700
+Wire Wire Line
+	14550 6700 14550 6600
+Wire Wire Line
+	14250 7000 14250 6300
+Wire Wire Line
+	14350 6900 14350 6400
+Wire Wire Line
+	14350 6400 14550 6400
+Wire Wire Line
+	14250 6300 14550 6300
+Wire Wire Line
+	14450 6500 14550 6500
+Wire Wire Line
+	14450 6800 14450 6500
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J6
+U 1 1 5CC730A6
+P 14750 6400
+F 0 "J6" H 14800 6717 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 14800 6626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 14750 6400 50  0001 C CNN
+F 3 "~" H 14750 6400 50  0001 C CNN
+	1    14750 6400
+	1    0    0    -1  
+$EndComp
+Text Label 11750 5450 0    50   ~ 0
+rxd0
+Text Label 11750 5350 0    50   ~ 0
+txd0
 $EndSCHEMATC
