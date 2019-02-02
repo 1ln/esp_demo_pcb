@@ -551,9 +551,9 @@ F 3 "" H 19350 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 16400 7600 2    50   ~ 0
-usb_rx_+
+_P
 Text Label 16400 7500 2    50   ~ 0
-usb_tx_-
+_N
 $Comp
 L Connector:USB_B_Micro J8
 U 1 1 5C6C2176
@@ -566,9 +566,9 @@ F 3 "~" H 14400 3450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 12900 3400 2    50   ~ 0
-usb_tx_-
+_N
 Text Label 12900 3500 2    50   ~ 0
-usb_rx_+
+_P
 Wire Wire Line
 	14250 3100 14250 2650
 $Comp
