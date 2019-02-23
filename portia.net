@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/dan/pcb_designs/portia/portia.sch)
-    (date "Sat 23 Feb 2019 15:31:49 EST")
+    (date "Sat 23 Feb 2019 15:39:21 EST")
     (tool "Eeschema 5.0.1-33cea8e~68~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -77,7 +77,7 @@
       (tstamp 5C79F09B))
     (comp (ref J4)
       (value Conn_02x06_Counter_Clockwise)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x06_Counter_Clockwise) (description "Generic connector, double row, 02x06, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

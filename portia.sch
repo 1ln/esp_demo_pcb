@@ -429,7 +429,7 @@ U 1 1 5C84F180
 P 8700 7700
 F 0 "J4" V 8704 7980 50  0000 L CNN
 F 1 "Conn_02x06_Counter_Clockwise" V 8795 7980 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 8700 7700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 8700 7700 50  0001 C CNN
 F 3 "~" H 8700 7700 50  0001 C CNN
 	1    8700 7700
 	0    1    1    0   
