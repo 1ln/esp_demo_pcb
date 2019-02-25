@@ -207,17 +207,6 @@ F 3 "" H 11150 7700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11000 6250 11450 6250
-$Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise J5
-U 1 1 5C71AF98
-P 11700 5450
-F 0 "J5" H 11750 5967 50  0000 C CNN
-F 1 "Conn_02x08_Counter_Clockwise" H 11750 5876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 11700 5450 50  0001 C CNN
-F 3 "~" H 11700 5450 50  0001 C CNN
-	1    11700 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11000 5150 11400 5150
 Wire Wire Line
@@ -328,17 +317,6 @@ Wire Wire Line
 	12100 6100 12100 5650
 Wire Wire Line
 	12100 5650 12000 5650
-$Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise J3
-U 1 1 5C79F09B
-P 7350 5900
-F 0 "J3" H 7400 5275 50  0000 C CNN
-F 1 "Conn_02x08_Counter_Clockwise" H 7400 5366 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 7350 5900 50  0001 C CNN
-F 3 "~" H 7350 5900 50  0001 C CNN
-	1    7350 5900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9150 5700 7900 5700
 Wire Wire Line
@@ -423,17 +401,6 @@ Wire Wire Line
 Connection ~ 7650 5600
 Wire Wire Line
 	7650 5600 9150 5600
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J4
-U 1 1 5C84F180
-P 8700 7700
-F 0 "J4" V 8704 7980 50  0000 L CNN
-F 1 "Conn_02x06_Counter_Clockwise" V 8795 7980 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 8700 7700 50  0001 C CNN
-F 3 "~" H 8700 7700 50  0001 C CNN
-	1    8700 7700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9150 6300 8400 6300
 Wire Wire Line
@@ -699,4 +666,37 @@ Wire Wire Line
 	10450 8400 10450 8750
 Wire Wire Line
 	11000 7700 11150 7700
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J3
+U 1 1 5C751B37
+P 7250 5800
+F 0 "J3" H 7300 6317 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 7300 6226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 7250 5800 50  0001 C CNN
+F 3 "~" H 7250 5800 50  0001 C CNN
+	1    7250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J5
+U 1 1 5C75C447
+P 11800 5550
+F 0 "J5" H 11850 4925 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 11850 5016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 11800 5550 50  0001 C CNN
+F 3 "~" H 11800 5550 50  0001 C CNN
+	1    11800 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J?
+U 1 1 5C7B3D0C
+P 8600 7800
+F 0 "J?" V 8696 7412 50  0000 R CNN
+F 1 "Conn_02x06_Odd_Even" V 8605 7412 50  0000 R CNN
+F 2 "" H 8600 7800 50  0001 C CNN
+F 3 "~" H 8600 7800 50  0001 C CNN
+	1    8600 7800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
