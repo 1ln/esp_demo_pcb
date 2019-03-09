@@ -37,11 +37,11 @@ F 3 "" H 8350 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push Reset1
 U 1 1 5C8C98D8
 P 8900 4450
-F 0 "SW1" H 8900 4735 50  0000 C CNN
-F 1 "Reset" H 8900 4644 50  0000 C CNN
+F 0 "Reset1" H 8900 4735 50  0000 C CNN
+F 1 "EN" H 8900 4644 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P-B" H 8900 4650 50  0001 C CNN
 F 3 "" H 8900 4650 50  0001 C CNN
 	1    8900 4450
@@ -81,7 +81,7 @@ L Mechanical:MountingHole H5
 U 1 1 5C6146C1
 P 3450 7500
 F 0 "H5" H 3550 7546 50  0000 L CNN
-F 1 "MountingHole" H 3750 7500 50  0000 L CNN
+F 1 "MountingHole" H 3750 7800 50  0000 L CNN
 F 2 "sb_designed_footprints:MountingHole_3mm" H 3450 7500 50  0001 C CNN
 F 3 "~" H 3450 7500 50  0001 C CNN
 	1    3450 7500
@@ -92,7 +92,7 @@ L Mechanical:MountingHole H1
 U 1 1 5C614951
 P 3450 7200
 F 0 "H1" H 3550 7246 50  0000 L CNN
-F 1 "MountingHole" H 3750 7200 50  0000 L CNN
+F 1 "MountingHole" H 3750 7300 50  0000 L CNN
 F 2 "sb_designed_footprints:MountingHole_3mm" H 3450 7200 50  0001 C CNN
 F 3 "~" H 3450 7200 50  0001 C CNN
 	1    3450 7200
@@ -139,11 +139,11 @@ Connection ~ 11700 6650
 Wire Wire Line
 	11700 6650 11700 7000
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push Boot1
 U 1 1 5C773290
 P 12850 6650
-F 0 "SW2" H 12850 6935 50  0000 C CNN
-F 1 "Reset" H 12850 6844 50  0000 C CNN
+F 0 "Boot1" H 12850 6935 50  0000 C CNN
+F 1 "Boot_ESP" H 12850 6844 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P-B" H 12850 6850 50  0001 C CNN
 F 3 "" H 12850 6850 50  0001 C CNN
 	1    12850 6650
@@ -165,12 +165,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5C775CD3
-P 11700 9800
-F 0 "#PWR0104" H 11700 9650 50  0001 C CNN
-F 1 "+3.3V" H 11715 9973 50  0000 C CNN
-F 2 "" H 11700 9800 50  0001 C CNN
-F 3 "" H 11700 9800 50  0001 C CNN
-	1    11700 9800
+P 11700 10300
+F 0 "#PWR0104" H 11700 10150 50  0001 C CNN
+F 1 "+3.3V" H 11715 10473 50  0000 C CNN
+F 2 "" H 11700 10300 50  0001 C CNN
+F 3 "" H 11700 10300 50  0001 C CNN
+	1    11700 10300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -261,7 +261,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 6950 9500 7700
 Wire Wire Line
-	11700 7300 11700 9800
+	11700 7300 11700 9650
 Wire Wire Line
 	11000 7700 12500 7700
 Wire Wire Line
@@ -304,32 +304,6 @@ F 3 "" H 9450 8200 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5C7E3667
-P 7050 3600
-F 0 "J3" V 7016 3412 50  0000 R CNN
-F 1 "Conn_01x02" V 6925 3412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 3600 50  0001 C CNN
-F 3 "~" H 7050 3600 50  0001 C CNN
-	1    7050 3600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7050 3800 7050 4250
-Wire Wire Line
-	7150 3800 7150 4450
-$Comp
-L power:GND #PWR0118
-U 1 1 5C80E4FE
-P 7150 4450
-F 0 "#PWR0118" H 7150 4200 50  0001 C CNN
-F 1 "GND" V 7155 4322 50  0000 R CNN
-F 2 "" H 7150 4450 50  0001 C CNN
-F 3 "" H 7150 4450 50  0001 C CNN
-	1    7150 4450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x08 J2
 U 1 1 5C8239F2
 P 7350 5900
@@ -355,52 +329,15 @@ Wire Wire Line
 	11000 6550 11000 7700
 Connection ~ 11000 6550
 $Comp
-L power:+3.3V #PWR0106
-U 1 1 5C85FFF8
-P 7050 4250
-F 0 "#PWR0106" H 7050 4100 50  0001 C CNN
-F 1 "+3.3V" H 7065 4423 50  0000 C CNN
-F 2 "" H 7050 4250 50  0001 C CNN
-F 3 "" H 7050 4250 50  0001 C CNN
-	1    7050 4250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5C86377F
-P 6250 3600
-F 0 "J1" V 6216 3412 50  0000 R CNN
-F 1 "Conn_01x02" V 6125 3412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 3600 50  0001 C CNN
-F 3 "~" H 6250 3600 50  0001 C CNN
-	1    6250 3600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6250 3800 6250 4250
-Wire Wire Line
-	6350 3800 6350 4450
-$Comp
-L power:GND #PWR0107
-U 1 1 5C863787
-P 6350 4450
-F 0 "#PWR0107" H 6350 4200 50  0001 C CNN
-F 1 "GND" V 6355 4322 50  0000 R CNN
-F 2 "" H 6350 4450 50  0001 C CNN
-F 3 "" H 6350 4450 50  0001 C CNN
-	1    6350 4450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0109
 U 1 1 5C86378D
-P 6250 4250
-F 0 "#PWR0109" H 6250 4100 50  0001 C CNN
-F 1 "+3.3V" H 6265 4423 50  0000 C CNN
-F 2 "" H 6250 4250 50  0001 C CNN
-F 3 "" H 6250 4250 50  0001 C CNN
-	1    6250 4250
-	-1   0    0    1   
+P 9100 9350
+F 0 "#PWR0109" H 9100 9200 50  0001 C CNN
+F 1 "+3.3V" H 9115 9523 50  0000 C CNN
+F 2 "" H 9100 9350 50  0001 C CNN
+F 3 "" H 9100 9350 50  0001 C CNN
+	1    9100 9350
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x08_Counter_Clockwise J4
@@ -462,11 +399,11 @@ Wire Wire Line
 Wire Wire Line
 	10450 8400 11300 8400
 Wire Wire Line
-	11200 8500 10450 8500
+	11200 8500 10550 8500
 Wire Wire Line
 	11200 6150 11200 8500
 Wire Wire Line
-	11250 8600 10450 8600
+	11250 8600 10650 8600
 Wire Wire Line
 	11250 6050 11250 8600
 Wire Wire Line
@@ -489,4 +426,114 @@ Wire Wire Line
 	9950 8700 8550 8700
 Wire Wire Line
 	9950 8600 8500 8600
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C845D8D
+P 3450 7800
+F 0 "H2" H 3550 7846 50  0000 L CNN
+F 1 "MountingHole" H 3750 8300 50  0000 L CNN
+F 2 "sb_designed_footprints:MountingHole_3mm" H 3450 7800 50  0001 C CNN
+F 3 "~" H 3450 7800 50  0001 C CNN
+	1    3450 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C846066
+P 3450 8100
+F 0 "H3" H 3550 8146 50  0000 L CNN
+F 1 "MountingHole" H 3750 8800 50  0000 L CNN
+F 2 "sb_designed_footprints:MountingHole_3mm" H 3450 8100 50  0001 C CNN
+F 3 "~" H 3450 8100 50  0001 C CNN
+	1    3450 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Counter_Clockwise J6
+U 1 1 5C8539A8
+P 10150 9450
+F 0 "J6" H 10200 9867 50  0000 C CNN
+F 1 "Conn_02x06_Counter_Clockwise" H 10200 9776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10150 9450 50  0001 C CNN
+F 3 "~" H 10150 9450 50  0001 C CNN
+	1    10150 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 8600 10650 9350
+Wire Wire Line
+	10650 9350 10450 9350
+Connection ~ 10650 8600
+Wire Wire Line
+	10650 8600 10450 8600
+Wire Wire Line
+	10550 8500 10550 9250
+Wire Wire Line
+	10550 9250 10450 9250
+Connection ~ 10550 8500
+Wire Wire Line
+	10550 8500 10450 8500
+Wire Wire Line
+	9950 9250 9350 9250
+Wire Wire Line
+	9100 9350 9950 9350
+Wire Wire Line
+	9950 9450 9950 9550
+Wire Wire Line
+	9950 10100 9750 10100
+Connection ~ 9950 9550
+Wire Wire Line
+	9950 9550 9950 9650
+Connection ~ 9950 9650
+Wire Wire Line
+	9950 9650 9950 9750
+Connection ~ 9950 9750
+Wire Wire Line
+	9950 9750 9950 10000
+$Comp
+L power:GND #PWR0107
+U 1 1 5C863787
+P 9350 9250
+F 0 "#PWR0107" H 9350 9000 50  0001 C CNN
+F 1 "GND" V 9355 9122 50  0000 R CNN
+F 2 "" H 9350 9250 50  0001 C CNN
+F 3 "" H 9350 9250 50  0001 C CNN
+	1    9350 9250
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C8B7CC6
+P 9750 10100
+F 0 "#PWR0106" H 9750 9850 50  0001 C CNN
+F 1 "GND" V 9755 9972 50  0000 R CNN
+F 2 "" H 9750 10100 50  0001 C CNN
+F 3 "" H 9750 10100 50  0001 C CNN
+	1    9750 10100
+	0    1    -1   0   
+$EndComp
+Connection ~ 9950 10000
+Wire Wire Line
+	9950 10000 9950 10100
+Wire Wire Line
+	10450 9650 11700 9650
+Connection ~ 11700 9650
+Wire Wire Line
+	11700 9650 11700 10300
+Wire Wire Line
+	9950 10000 10550 10000
+Wire Wire Line
+	10450 9450 10550 9450
+Wire Wire Line
+	10550 9450 10550 9550
+Wire Wire Line
+	10450 9550 10550 9550
+Connection ~ 10550 9550
+Wire Wire Line
+	10550 9550 10550 9750
+Wire Wire Line
+	10450 9750 10550 9750
+Connection ~ 10550 9750
+Wire Wire Line
+	10550 9750 10550 10000
 $EndSCHEMATC
