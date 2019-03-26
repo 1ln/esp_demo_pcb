@@ -198,10 +198,6 @@ Wire Wire Line
 	11250 5950 11000 5950
 Wire Wire Line
 	11200 5750 11200 5850
-Wire Wire Line
-	9150 6400 8550 6400
-Wire Wire Line
-	9150 6500 8600 6500
 NoConn ~ 10350 6950
 NoConn ~ 10250 6950
 NoConn ~ 10150 6950
@@ -321,17 +317,6 @@ Wire Wire Line
 	11000 6550 11000 7700
 Connection ~ 11000 6550
 $Comp
-L power:+3.3V #PWR0109
-U 1 1 5C86378D
-P 9100 9350
-F 0 "#PWR0109" H 9100 9200 50  0001 C CNN
-F 1 "+3.3V" H 9115 9523 50  0000 C CNN
-F 2 "" H 9100 9350 50  0001 C CNN
-F 3 "" H 9100 9350 50  0001 C CNN
-	1    9100 9350
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Counter_Clockwise J4
 U 1 1 5C86E1D6
 P 10150 8500
@@ -354,17 +339,9 @@ F 3 "" H 9150 8300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9150 6300 8500 6300
-Wire Wire Line
-	8500 6300 8500 8400
-Wire Wire Line
-	8550 6400 8550 8500
-Wire Wire Line
 	9450 8200 9550 8200
 Wire Wire Line
 	9150 8300 9600 8300
-Wire Wire Line
-	8600 6500 8600 8600
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5C845D8D
@@ -398,21 +375,6 @@ F 3 "~" H 10150 9450 50  0001 C CNN
 	1    10150 9450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 9250 9350 9250
-Wire Wire Line
-	9100 9350 9950 9350
-$Comp
-L power:GND #PWR0107
-U 1 1 5C863787
-P 9350 9250
-F 0 "#PWR0107" H 9350 9000 50  0001 C CNN
-F 1 "GND" V 9355 9122 50  0000 R CNN
-F 2 "" H 9350 9250 50  0001 C CNN
-F 3 "" H 9350 9250 50  0001 C CNN
-	1    9350 9250
-	0    1    -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5C8B7CC6
@@ -432,12 +394,6 @@ Wire Wire Line
 	9950 10100 9750 10100
 Wire Wire Line
 	10450 9750 10550 9750
-Wire Wire Line
-	9950 9550 9950 9650
-Connection ~ 9950 9550
-Wire Wire Line
-	9950 9450 9950 9550
-Connection ~ 9950 9650
 Wire Wire Line
 	9950 9650 9950 9750
 Connection ~ 9950 9750
@@ -463,12 +419,6 @@ Wire Wire Line
 Connection ~ 9950 10000
 Wire Wire Line
 	9950 10000 10550 10000
-Wire Wire Line
-	9950 8400 8500 8400
-Wire Wire Line
-	9950 8500 8550 8500
-Wire Wire Line
-	9950 8600 8600 8600
 Wire Wire Line
 	9550 8900 9550 8200
 Wire Wire Line
@@ -531,10 +481,6 @@ Wire Wire Line
 Connection ~ 10950 8600
 Wire Wire Line
 	10950 8600 11200 8600
-Wire Wire Line
-	9750 8700 9950 8700
-Wire Wire Line
-	9750 6950 9750 8700
 $Comp
 L Device:LED_Small D1
 U 1 1 5C9D26F7
@@ -570,4 +516,28 @@ Wire Wire Line
 Connection ~ 13150 6650
 Wire Wire Line
 	13150 6650 13350 6650
+Wire Wire Line
+	8750 9250 9950 9250
+Wire Wire Line
+	8850 9350 9950 9350
+Wire Wire Line
+	8950 9450 9950 9450
+Wire Wire Line
+	9850 9550 9950 9550
+Wire Wire Line
+	9950 8400 8850 8400
+Wire Wire Line
+	8850 8400 8850 9350
+Wire Wire Line
+	9950 8500 8750 8500
+Wire Wire Line
+	8750 8500 8750 9250
+Wire Wire Line
+	8950 8700 9950 8700
+Wire Wire Line
+	8950 8700 8950 9450
+Wire Wire Line
+	9950 8600 9850 8600
+Wire Wire Line
+	9850 8600 9850 9550
 $EndSCHEMATC
