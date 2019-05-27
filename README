@@ -1,5 +1,5 @@
-Portia,
-An ESP32 based modular system with castellated pcb footprint for quick prototyping and development.
+
+Portia, Esp32 development board
 
 Notice: Project is currently in development and has not been fully tested.
 
@@ -9,33 +9,20 @@ As an open source pcb, You choose to use at your own risk.
 
 You are free to use under the terms of OSHW, however if you are interested in producing this as a product it would be my preference to enjoy a royalty of any profits made and/or credit. Please don't hesitate to contact me if you are interested in producing this.
 
-Developed by Dan Olson
+Developed by Dan Olson, 2019
+
+This is a small, low cost development board for the ESP32 wroom module (16 GB version).
 
 Features:
 
-- Uses the fast and popular ESP32 (castellated via version) development board as the main controller. These boards are fairly low cost and provide wifi,bluetooth and various other onboard functions.
+Both VSPI and HSPI have been routed to a single header.
+Low noise LDO
+One 3 pin rgb led for status alerts and testing.
+Programming port includes a ground pin.
 
-- 16 pin (7 with pin out functionality) castellated breakout board footprint for development,research and testing of ideas.
+Please be aware that there is no usb on this board, it is meant to be programmed with an external adapter.
 
-- Small,lightweight and can be used on professional projects too.
 
-- With some soldering practice, the module boards are easy to solder in place.
 
-- Low cost and robust.
 
-- One onboard led for testing.
 
-- Plenty of ground and 3.3v out.
-
-- Set of 16 additional pins broken out to pin headers for normal use.
-
-Programming:
-
-Programming is without usb functionality, on further iterations I may consider expanding the board edge to add a usb port with a cp2102.
-
-TODO:
-
-Order and test first iteration of board
-Label all important pins
-Write a small testing script to demonstrate functionality
-Develop and design the first attach board and test it.
